@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>OA</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/mycss.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="./js/icheck.min.js"></script>
+</head>
+
+<body>
+	<div class="legend">
+		<p>修改"xiao"用户的应用角色</p>
+			<form action="impalter_urm" method="post">
+			<ul class="inline">
+				<li><input class="icheckbox_futurico" type="checkbox" name="selectrole1" checked="checked" value="role1">role1</input></li>
+				<li><input class="icheckbox_futurico" type="checkbox" name="selectrole2" value="role2">role2</input></li>
+				<li><input type="hidden" name="username" value="xiao" /></li>
+				<li><input type="hidden" name="application" value="财务系统" /><br /></li>
+				<li><input class="block" type="submit" value="确认修改" /></li>
+			</ul>
+			</form>
+			<form action="user-role_index">
+				<input class="block" type="submit" value="返回" />
+			</form>
+	</div>
+	<script>
+		$(document).ready(function(){
+		  $('input').iCheck({
+			checkboxClass: 'icheckbox_futurico',
+			radioClass: 'iradio_futurico',
+			increaseArea: '20%' // optional
+		  });
+		});
+	</script>
+</body>
+</html>
+  

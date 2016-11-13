@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>OA</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/mycss.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	
+					<ul class="inline">
+						<li class="inline">
+							<p class="content-title">功能-URL映射管理</p>
+						</li>
+						<li class="inline-right">
+							<a id="add_app_function" class="add" href="javascript:void(0)" onclick="show('add_app_function_box')">添加功能</a>
+						</li>
+					</ul>
+					<div>
+						<table id="function_url_table" class="table">
+							<thead>
+								<tr>
+									<th>序号</th>
+									<th>功能</th>
+									<th>配置</th>
+									<th>删除</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="success">
+									<td>1</td>
+									<td>fun1</td>
+									<td>
+										<form action="functionmapping" method="post">
+											<input type="hidden" name="application" value="财务系统">
+											<input type="hidden" name="function" value="fun1">
+											<input type="submit" name="manage" value="管理功能">
+										</form>
+									</td>
+									<td>
+										<form action="deletefunction" method="post">
+											<input type="hidden" name="application" value="财务系统">
+											<input type="hidden" name="function" value="fun1">
+											<input type="submit" name="delete" value="删除功能">
+										</form>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				
+</body>
+</html>

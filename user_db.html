@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>OA</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/mycss.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	
+			<ul class="inline">
+				<li class="inline">
+					<p class="content-title">用户-数据库角色映射管理</p>
+				</li>		
+				<li class="inline-right">
+					<form action="findusm" method="post">
+						<input type="hidden" name="application" value="应用1"/>
+						<input type="hidden" name="reuse" value="1"/>
+						<input id="search1" class="search" placeholder="搜索..." type="text" value="" />
+						<input type="submit" value="搜索">
+					</form>									
+				</li>		
+			</ul>		
+					<div>
+						<table id="user_db_table" class="table">
+							<thead>
+								<tr>
+									<th>序号</th>
+									<th>用户名</th>
+									<th>数据库角色</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+							<!-- 请求回的数据 形式-->
+								<tr class="success">
+									<td>1</td>
+									<td>liu</td>
+									<td>manager</td>									
+									<td>
+										<form action="select_scole" method="post">
+											<input type="hidden" name="username" value="liu" />
+											<input type="hidden" name="application" value="应用1" />
+											<input type="hidden" name="srole" value="manager" />
+											<input type="submit" name="manage" value="管理"/>
+										</form>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>OA</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/mycss.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- header -->
+	<header>
+		<div>
+			<ul class="inline">
+				<li class ="inline">
+					<img src="logo.png"/>
+				</li>
+				<li class ="inline">
+					<p class="title">应用管控平台</p>
+				</li>
+				<li class ="inline-right">
+					<p id="exit" class="title2">退出</p>
+				</li>
+				<li class ="inline-right">
+					<p id="admin_name" class="title2">管理员用户名</p>
+				</li>
+				<li class ="inline-right">
+					<img id="avatar" class="avatar" src="avatar.png"/>
+				</li>
+				<li class ="inline-right">
+					<form>
+						<select id="current_app" class="select">
+							<option>应用1
+							<option>应用2
+						</select>
+					</form>
+				</li>
+				<li class ="inline-right">
+					<p class="title2">当前应用：</p>
+				</li>	
+			</ul>
+		</div>
+	</header>
+	
+	<div id="body">
+		<!-- navbar -->
+		<div id="navbar">
+			<ul id="nav1"class="nav nav-tabs nav-justified">
+				<li><a href="./safe_trade.html" target="frmpage">安全态势</a></li>
+				<li class="dropdown">
+					<a href="#" id="TabDrop1" class="dropdown-toggle" data-toggle="dropdown">角色管理
+					<b class="caret"></b></a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="TabDrop1">
+						<li><a href="./user_app.html" tabindex="-1"  target="frmpage">用户-应用角色</a></li>
+						<li><a href="./user_db.html" tabindex="-1"  target="frmpage">用户-数据库角色</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" id="TabDrop2" class="dropdown-toggle" data-toggle="dropdown">WAF规则管理
+					<b class="caret"></b></a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="TabDrop2">
+						<li><a href="./role_function.html" tabindex="-1"  target="frmpage">角色-功能</a></li>
+						<li><a href="./function_url.html" tabindex="-1"  target="frmpage">功能-URL</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" id="TabDrop3" class="dropdown-toggle" data-toggle="dropdown">SQLrelay规则管理
+					<b class="caret"></b></a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="TabDrop3">
+						<li><a href="./role_table.html" tabindex="-1"  target="frmpage">角色-表</a></li>
+						<li><a href="./table_operating.html" tabindex="-1"  target="frmpage">表-操作</a></li>
+					</ul>
+				</li>
+				<li><a href="./waf_log.html" target="frmpage">WAF日志</a></li>
+				<li><a href="./sqlrelay_log.html" target="frmpage">SQLrelay日志</a></li>
+			</ul>
+		</div>
+		<!-- content -->
+		<div id="content">	
+			<iframe name="frmpage"></iframe>			
+		</div>
+	</div>
+	<script>
+		$(document).ready({
+			$(ul#nav1 li).
+		});
+	</script>
+</body>
+</html>

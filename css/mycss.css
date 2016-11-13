@@ -1,0 +1,251 @@
+body {
+	background:#333;
+	background-attachment:fixed;
+	background-repeat:repeat-x,repeat-y;
+	z-index:-2;
+}
+iframe {
+	width:100%;
+	height:500px;
+	border:none;
+	
+}
+caption,th {
+	color:#fc0;
+}
+#body {
+	width:100%;
+	height:100%;
+}
+#navbar {
+	width:100%;
+	height:auto;
+}
+#content {
+	width:100%;
+	height:auto;
+}
+.loginbox { 
+	width:480px; 
+	height:400px; 
+	float:right; 
+	background:transparent; 
+	padding:55px 70px;
+}
+.userbox { 
+	height:60px; 
+	background-color:#ffffff;
+	border:1px solid #acacac;
+	margin-top:28px; 
+	padding:10px 0;
+}
+.btnbox {
+	height:60px; 
+	background-color:#ffffff;
+	margin-top:28px;
+}
+.inputuser { 
+	width:250px; 
+	height:38px; 
+	border:0 none; 
+	padding:0;
+	margin:0; 
+	float:right; 
+	line-height:38px; 
+	font-size:16px;
+	outline:none;
+}
+.iconuser { 
+	width:64px; 
+	height:38px; 
+	background:url(../iconpeople.png) no-repeat center; 
+	float:left;
+	border-right:1px solid #c7c7c7;
+}
+.iconpass { 
+	width:64px; 
+	height:38px; 
+	background:url(../iconsuo.png) no-repeat center; 
+	float:left;
+	border-right:1px solid #c7c7c7;
+}
+.submitbtn { 
+	width:100%; 
+	height:60px;
+	background:#39abea;
+	color:#fc0;
+}
+.submitbtn:hover {
+	background-color:#23527c;
+	color:#f90;
+}
+.login-title {
+	text-align:center;
+}
+ul.inline {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+li.inline {
+	float:left;
+}
+li.inline-right {
+	float:right;
+}
+input.block {
+	display:block;
+	
+}
+p.title {
+	font-size:40px;
+	padding:20px;
+	height:auto;
+	color:#fc0;
+}
+p.title2 {
+	font-size:10px;
+	padding:10px;
+	height:auto;
+	color:#fc0;
+}
+p.welcome {
+	font-size:38px;
+}
+.select {
+	padding:1px;
+	height:auto;
+	width:90px;
+}
+.avatar {
+	margin:10px;
+}
+p.content-title {
+	color:#fff;
+	text-align:center;
+	font-size:28px;
+}
+.canvas {
+	width:50%;
+	height:50%;
+}
+.add:link,.add:visited {
+	display:block;
+	width:120px;
+	margin:3px;
+	padding:5px;
+	font-size: 20px;
+	color:#fc0;
+	text-align: center;
+	text-decoration:none;
+	background-color:#aaa;
+	cursor: pointer;
+}
+.add:hover,add:active {
+	color:#f90;
+}
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	padding: 60px 160px;
+	border: 2px solid #D6E9F1;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+}
+.black_overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color:#f5f5f5;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+.close {
+	float:right;
+	clear:both;
+	width:100%;
+	text-align:right;
+	argin:0 0 6px 0;
+}
+.close a {
+	color:#333;
+	text-decoration:none;
+	font-size:14px;
+	font-weight:700;
+}
+.con {
+	text-indent:1.5pc;
+	line-height:21px;
+}
+.legend {
+	color:#aaa;
+	font-family: MontserratRegular, Helvetica, Arial, sans-serif;
+	width:50%;
+	margin:0 25%;
+	padding:10%;
+	
+}
+/* iCheck plugin Futurico skin
+----------------------------------- */
+.icheckbox_futurico,
+.iradio_futurico {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 16px;
+    height: 17px;
+    background: url(futurico.png) no-repeat;
+    border: none;
+    cursor: pointer;
+	color: white;
+}
+
+.icheckbox_futurico {
+    background-position: 0 0;
+}
+    .icheckbox_futurico.checked {
+        background-position: -18px 0;
+    }
+    .icheckbox_futurico.disabled {
+        background-position: -36px 0;
+        cursor: default;
+    }
+    .icheckbox_futurico.checked.disabled {
+        background-position: -54px 0;
+    }
+
+.iradio_futurico {
+    background-position: -72px 0;
+}
+    .iradio_futurico.checked {
+        background-position: -90px 0;
+    }
+    .iradio_futurico.disabled {
+        background-position: -108px 0;
+        cursor: default;
+    }
+    .iradio_futurico.checked.disabled {
+        background-position: -126px 0;
+    }
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+    .icheckbox_futurico,
+    .iradio_futurico {
+        background-image: url(futurico@2x.png);
+        -webkit-background-size: 144px 19px;
+        background-size: 144px 19px;
+    }
+}
