@@ -10,48 +10,53 @@
 </head>
 
 <body>
-					<ul class="inline">
-						<li class="inline">
-							<p class="content-title">用户-应用角色映射管理</p>
-						</li>
-						<li class="inline-right">
-							<form action="findurm" method="post">
-								<input type="hidden" name="application" value="应用1"/>
-								<input type="hidden" name="reuse" value="1"/>
-								<input id="search1" class="search" placeholder="搜索..." type="text" value="" />
-								<input type="submit" value="搜索">
-							</form>
-						</li>
-					</ul>
-					<div>
-						<table id="user_app_table" class="table">
-							<thead>
-								<tr>
-									<th>序号</th>
-									<th>用户名</th>
-									<th>应用角色</th>
-									<th>操作</th>
-								</tr>
-							</thead>
-							<tbody>
-								<!-- 请求回的数据 形式-->
-								<tr class="success">
-									<td>1</td>
-									<td>liu</td>
-									<td>admin</td>									
-									<td>
-										<form action="select_role" method="post">
-											<input type="hidden" name="username" value="liu" />
-											<input type="hidden" name="application" value="应用1" />
-											<input type="hidden" name="role" value="admin" />
-											<input type="submit" name="manage" value="管理"/>
-										</form>
-									</td>
-								</tr>
-								
-							</tbody>
-						</table>
-					</div>
-				
+	<div class="container">
+		<div class="row">
+			<ul class="list-inline">
+				<li>
+					<p class="content-title">用户-应用角色映射管理</p>
+				</li>
+				<li class="float-right">
+					<form action="findurm" method="post">
+						<input type="hidden" name="application" value="应用1"/>
+						<input type="hidden" name="reuse" value="1"/>
+						<input id="search1" class="search" placeholder="搜索..." type="text" value="" />
+						<input type="submit" value="搜索">
+					</form>
+				</li>
+			</ul>
+		</div>
+		<div class="row">
+			<table id="user_app_table" class="table">
+				<thead>
+					<tr>
+						<th>序号</th>
+						<th>用户名</th>
+						<th>应用角色</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- 请求回的数据 形式-->
+					<tr class="success">
+						<td>1</td>
+						<td>liu</td>
+						<td>admin</td>									
+						<td>
+										<!--
+											<form action="select_role" method="post">
+												<input type="hidden" name="username" value="liu" />
+												<input type="hidden" name="application" value="应用1" />
+												<input type="hidden" name="role" value="admin" />
+												<input type="submit" name="manage" value="管理"/>
+											</form>
+										-->
+							<a class="in-button" href="select_role.html" target="_self"><button type="button" class="btn btn-primary btn-xs btn-block">管理</button></a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>	
 </body>
 </html>

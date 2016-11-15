@@ -10,78 +10,63 @@
 </head>
 
 <body>
-	<!-- header -->
-	<header>
-		<div>
-			<ul class="inline">
-				<li class ="inline">
-					<img src="logo.png"/>
-				</li>
-				<li class ="inline">
-					<p class="title">应用管控平台</p>
-				</li>
-				<li class ="inline-right">
-					<p id="exit" class="title2">退出</p>
-				</li>
-				<li class ="inline-right">
-					<p id="admin_name" class="title2">管理员用户名</p>
-				</li>
-				<li class ="inline-right">
-					<img id="avatar" class="avatar" src="avatar.png"/>
-				</li>
-				<li class ="inline-right">
-					<form>
-						<select id="current_app" class="select">
-							<option>应用1
-							<option>应用2
-						</select>
-					</form>
-				</li>
-				<li class ="inline-right">
-					<p class="title2">当前应用：</p>
-				</li>	
-			</ul>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 nonpadding">
+				<img src="logo.png"/>
+			</div>
+			<div class="col-lg-3 nonpadding">
+				<h1 class="title">应用管控平台</h1>
+			</div>
+			<div class="col-lg-5 nonpadding"></div>
+			<div class="col-lg-2 nonpadding float-right">
+				<span id="admin_name" class="title3">管理员用户名</span>
+				<span id="exit" class="title3">退出</span><br />
+				<form role="form">
+					<label class="title3">当前应用：</label>
+					<select id="current_app">
+						<option>应用1
+						<option>应用2
+					</select>
+				</form>
+			</div>
 		</div>
-	</header>
 	
-	<div id="body">
-		<!-- navbar -->
-		<div id="navbar">
-			<ul id="nav1"class="nav nav-tabs nav-justified">
-				<li><a href="./safe_situation.html" target="frmpage">安全态势</a></li>
-				<li class="dropdown">
-					<a href="#" id="TabDrop1" class="dropdown-toggle" data-toggle="dropdown">角色管理
-					<b class="caret"></b></a>
-					<ul class="dropdown-menu" role="menu" aria-labelledby="TabDrop1">
-						<li><a href="./user_app.html" tabindex="-1"  target="frmpage">用户-应用角色</a></li>
-						<li><a href="./user_db.html" tabindex="-1"  target="frmpage">用户-数据库角色</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" id="TabDrop2" class="dropdown-toggle" data-toggle="dropdown">WAF规则管理
-					<b class="caret"></b></a>
-					<ul class="dropdown-menu" role="menu" aria-labelledby="TabDrop2">
-						<li><a href="./role_function.html" tabindex="-1"  target="frmpage">角色-功能</a></li>
-						<li><a href="./function_url.html" tabindex="-1"  target="frmpage">功能-URL</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" id="TabDrop3" class="dropdown-toggle" data-toggle="dropdown">SQLrelay规则管理
-					<b class="caret"></b></a>
-					<ul class="dropdown-menu" role="menu" aria-labelledby="TabDrop3">
-						<li><a href="./role_table.html" tabindex="-1"  target="frmpage">角色-表</a></li>
-						<li><a href="./table_operating.html" tabindex="-1"  target="frmpage">表-操作</a></li>
-					</ul>
-				</li>
-				<li><a href="./waf_log.html" target="frmpage">WAF日志</a></li>
-				<li><a href="./sqlrelay_log.html" target="frmpage">SQLrelay日志</a></li>
-			</ul>
+		<div class="row">
+			<div class="col-lg-12 nonpadding">
+				<ul class="nav nav-pills nav-justified">
+					<li><a class="navitem" href="./safe_situation.html" target="frmpage">安全态势</a></li>
+					<li class="dropdown">
+						<a class="navitem" href="#" id="TabDrop1" class="dropdown-toggle" data-toggle="dropdown">角色管理<b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="TabDrop1">
+							<li><a href="./user_app.html" tabindex="-1"  target="frmpage">用户-应用角色</a></li>
+							<li><a href="./user_db.html" tabindex="-1"  target="frmpage">用户-数据库角色</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="navitem" href="#" id="TabDrop2" class="dropdown-toggle" data-toggle="dropdown">WAF规则管理<b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="TabDrop2">
+							<li><a href="./role_function.html" tabindex="-1"  target="frmpage">角色-功能</a></li>
+							<li><a href="./function_url.html" tabindex="-1"  target="frmpage">功能-URL</a></li>
+						</ul>
+					</li>
+					<li><a class="navitem" href="./role_table.html" target="frmpage">SQLrelay规则管理</a></li>
+					<li class="dropdown">
+						<a class="navitem" href="#" id="TabDrop2" class="dropdown-toggle" data-toggle="dropdown">日志管理<b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="TabDrop2">
+							<li><a href="./waf_log.html" tabindex="-1"  target="frmpage">WAF日志</a></li>
+							<li><a href="./sqlrelay_log.html" tabindex="-1"  target="frmpage">SQLrelay日志</a></li>
+						</ul>
+					</li>
+					<li><a class="navitem" href="./import.html" target="frmpage">导入</a></li>
+					<li><a class="navitem" href="./setting.html" target="frmpage">配置</a></li>
+				</ul>
+			</div>
 		</div>
-		<!-- content -->
-		<div id="content">	
-			<iframe name="frmpage">
-			</iframe>			
-		</div>
+	</div>
+	<div class="container">
+		<iframe name="frmpage">
+		</iframe>
 	</div>
 </body>
 </html>

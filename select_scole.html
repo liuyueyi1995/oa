@@ -11,20 +11,28 @@
 </head>
 
 <body>
-	<div class="legend">
-		<p>修改"xiao"用户的数据库角色</p>
-			<form action="impalter_usm" method="post">
-			<ul class="inline">
-				<li><input class="icheckbox_futurico" type="checkbox" name="selectrole1" checked="checked" value="role1">role1</input></li>
-				<li><input class="icheckbox_futurico" type="checkbox" name="selectrole2" value="role2">role2</input></li>
-				<li><input type="hidden" name="username" value="xiao" /></li>
-				<li><input type="hidden" name="application" value="财务系统" /><br /></li>
-				<li><input class="block" type="submit" value="确认修改" /></li>
-			</ul>
-			</form>
-			<form action="user-role_index">
-				<input class="block" type="submit" value="返回" />
-			</form>
+	<div class="container">
+		<div class="row">
+			<p class="content-title">修改"xiao"用户的数据库角色</p>
+		</div>
+		<div class="row">
+			<div class="col-lg-4"></div>
+			<div class="col-lg-4 ">
+				<form action="impalter_urm" method="post">
+					<ul class="list-unstyled">
+						<li class="white"><input class="icheckbox_futurico" type="checkbox" name="selectrole1" checked="checked" value="role1">role1</input></li>
+						<li class="white"><input class="icheckbox_futurico" type="checkbox" name="selectrole2" value="role2">role2</input></li>
+						<li><input type="hidden" name="username" value="xiao" /></li>
+						<li><input type="hidden" name="application" value="财务系统" /><br /></li>
+						<li><input class="btn btn-default btn-block" type="submit" value="确认修改" /></li>
+					</ul>
+				</form>
+				<form action="user-role_index" >
+					<input class="btn btn-default btn-block" type="submit" value="返回" />
+				</form>
+			</div>
+			<div class="col-lg-4"></div>
+		</div>
 	</div>
 	<script>
 		$(document).ready(function(){

@@ -10,19 +10,23 @@
 </head>
 
 <body>
-	
-			<ul class="inline">
-				<li class="inline">
+	<div class="container">
+		<div class="row">
+			<ul class="list-inline">
+				<li>
 					<p class="content-title">SQLrelay日志</p>
 				</li>
-				<li class="inline-right">
-					<input type="submit" value="搜索">
-				</li>
-				<li class="inline-right">
-					<input id="search1" class="search" placeholder="搜索..." type="text" value="" />
+				<li class="float-right">
+					<form action="findurm" method="post">
+						<input type="hidden" name="application" value="应用1"/>
+						<input type="hidden" name="reuse" value="1"/>
+						<input id="search1" class="search" placeholder="搜索..." type="text" value="" />
+						<input type="submit" value="搜索">
+					</form>
 				</li>
 			</ul>
-			<div>
+		</div>
+		<div class="row">
 				<table id="sqlrelay_log_table" class="table">
 					<thead>
 						<tr>
@@ -115,7 +119,7 @@
 							 <td>chen</td>
 							 <td>admin</td>
 							 <td>select * from user</td>
-							 <td>允许</td>
+							 <td>禁止</td>
 						</tr>
 						<tr class="danger">
 							<td>2</td>
@@ -128,7 +132,7 @@
 						</tr>
 					</tbody>
 				</table>
-			</div>
-		
+		</div>
+	</div>
 </body>
 </html>

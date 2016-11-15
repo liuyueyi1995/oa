@@ -10,22 +10,24 @@
 </head>
 
 <body>
-	
-			<ul class="inline">
-				<li class="inline">
+	<div class="container">
+		<div class="row">
+			<ul class="list-inline">
+				<li>
 					<p class="content-title">用户-数据库角色映射管理</p>
-				</li>		
-				<li class="inline-right">
+				</li>
+				<li class="float-right">
 					<form action="findusm" method="post">
 						<input type="hidden" name="application" value="应用1"/>
 						<input type="hidden" name="reuse" value="1"/>
 						<input id="search1" class="search" placeholder="搜索..." type="text" value="" />
 						<input type="submit" value="搜索">
-					</form>									
-				</li>		
-			</ul>		
-					<div>
-						<table id="user_db_table" class="table">
+					</form>	
+				</li>
+			</ul>
+		</div>
+		<div class="row">
+			<table id="user_db_table" class="table">
 							<thead>
 								<tr>
 									<th>序号</th>
@@ -41,17 +43,20 @@
 									<td>liu</td>
 									<td>manager</td>									
 									<td>
+										<!--
 										<form action="select_scole" method="post">
 											<input type="hidden" name="username" value="liu" />
 											<input type="hidden" name="application" value="应用1" />
 											<input type="hidden" name="srole" value="manager" />
 											<input type="submit" name="manage" value="管理"/>
 										</form>
+										-->
+										<a class="in-button" href="select_scole.html" target="_self"><button type="button" class="btn btn-primary btn-xs btn-block">管理</button></a>
 									</td>
 								</tr>
 							</tbody>
-						</table>
-					</div>
-				
+			</table>
+		</div>
+	</div>	
 </body>
 </html>

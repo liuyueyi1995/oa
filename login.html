@@ -8,21 +8,20 @@
 	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-	<header>
-	<div>
-		<ul class="inline">
-			<li class="inline">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 nonpadding">
 				<img src="logo.png"/>
-			</li>
-			<li class="inline">
-				<p class="title">XXX应用管控平台</p>
-			</li>
-		</ul>
+			</div>
+			<div class="col-lg-8 nonpadding">
+				<p class="title">应用管控平台</p>
+			</div>
+		</div>
 	</div>
-	</header>
+	
 	<div class="loginbox">
-		<!--<div class="login-title"><p class="welcome">欢迎登录</p></div>-->
 		<form>
 			<div class="userbox">
 				<div class="iconuser"></div>
@@ -33,7 +32,7 @@
 				<input id="password" name="password" class="inputuser" tabindex="2" placeholder="请输入管理员密码" type="password" value="" size="25" autocomplete="false"/>
 			</div>
 			<div class="btnbox">
-				<input class="submitbtn" type="submit" value="立即登录">
+				<input class="submitbtn" type="submit" value="登录">
 			</div>
 		</form>
 	</div>

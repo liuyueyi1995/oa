@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>OA</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/mycss.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="./js/icheck.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<p class="content-title">添加"角色1"角色的SQL-relay规则</p>
+		</div>
+		<div class="row">
+			<div class="col-lg-4"></div>
+			<div class="col-lg-4 ">
+				
+				<form class="form-horizontal" role="form" action="impaddrole" method="post">
+					<div class="form-group">
+						<label for="tablename" class="col-lg-3 control-label white">数据表：</label>
+						<div class="col-lg-9">
+							<select id="tablename" class="form-control">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="para" class="col-lg-3 control-label white">规则配置：</label>
+						<div class="col-lg-9">
+							<ul class="list-unstyled">
+								<li class="white"><input class="icheckbox_futurico" type="checkbox" checked="checked" value="noinsert">禁止insert</input></li>
+								<li class="white"><input class="icheckbox_futurico" type="checkbox" checked="checked" value="nodelete">禁止delete</input></li>
+								<li class="white"><input class="icheckbox_futurico" type="checkbox" checked="checked" value="noupdate">禁止update</input></li>
+								<li class="white"><input class="icheckbox_futurico" type="checkbox" checked="checked" value="noselect">禁止select</input></li>
+							</ul>
+						</div>
+					</div>
+					<ul class="list-inline">
+						<li>
+							<div class="form-group">
+								<div class="col-lg-6">
+									<button type="reset" class="btn btn-default">重置</button>
+								</div>
+							</div>
+						</li>
+						<li class="float-right">
+							<div class="form-group">
+								<div class="col-lg-6">
+									<button type="submit" class="btn btn-default">添加</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</form>
+				<div class="form-group">
+					<div class="col-lg-12 nonpadding">
+						<a class="in-button" href="sqlr_rule.html" target="_self"><button class="btn btn-default btn-block">返回</button></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4"></div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+		  $('input').iCheck({
+			checkboxClass: 'icheckbox_futurico',
+			radioClass: 'iradio_futurico',
+			increaseArea: '20%' // optional
+		  });
+		});
+	</script>
+</body>
+</html>
+  

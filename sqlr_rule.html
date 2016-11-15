@@ -14,63 +14,65 @@
 		<div class="row">
 			<ul class="list-inline">
 				<li>
-					<p class="content-title">角色-功能映射管理</p>
+					<p class="content-title">"对admin能增"角色的规则</p>
 				</li>
 				<li class="float-right">
-					<a class="in-button" href="add_app_role.html" target="_self">
-						<button type="button" class="btn btn-warning btn-xs btn-block">添加应用角色</button>
+					<a class="in-button" href="add_srule.html" target="_self">
+						<button type="button" class="btn btn-warning btn-xs btn-block">添加数据库规则</button>
 					</a>
 				</li>
 			</ul>
 		</div>
 		<div class="row">
-		<div class="table-responsive">
-			<table id="role_function_table" class="table">
+			<div class="table-responsive">
+				<table id="function_url_table" class="table">
 							<thead>
 								<tr>
 									<th>序号</th>
-									<th>角色</th>
-									<th>允许访问的功能</th>
-									<th>配置</th>
+									<th>数据表</th>
+									<th>禁止增</th>
+									<th>禁止删</th>
+									<th>禁止查</th>
+									<th>禁止改</th>
+									<th>修改</th>
 									<th>删除</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr class="success">
 									<td>1</td>
-									<td>role1</td>
-									<td>fun1</td>
+									<td>user</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
 									<td>
 										<!--
-										<form action="selectfunction" method="post">
+										<form action="functionmapping" method="post">
 											<input type="hidden" name="application" value="财务系统">
-											<input type="hidden" name="role" value="role1">
-											<input type="hidden" name="ffun" value="fun1">
-											<input type="submit" name="manage" value="管理角色">
+											<input type="hidden" name="function" value="fun1">
+											<input type="submit" name="manage" value="管理功能">
 										</form>
 										-->
-										
-										<a class="in-button" href="select_function.html" target="_self">
-											<button type="button" class="btn btn-primary btn-xs btn-block">配置</button >
+										<a class="in-button" href="update_srule.html" target="_self">
+											<button type="button" class="btn btn-primary btn-xs btn-block">修改</button >
 										</a>
-										
 									</td>
 									<td>
 										<!--
-										<form action="impdelete" method="post">
+										<form action="deletefunction" method="post">
 											<input type="hidden" name="application" value="财务系统">
-											<input type="hidden" name="role" value="role1">
-											<input type="hidden" name="ffun" value="fun1">
-											<input type="submit" name="delete" value="删除角色">
+											<input type="hidden" name="function" value="fun1">
+											<input type="submit" name="delete" value="删除功能">
 										</form>
 										-->
 										<button type="button" class="btn btn-danger btn-xs btn-block">删除</button >
 									</td>
 								</tr>
 							</tbody>
-			</table>
+				</table>
+			</div>
 		</div>
-		</div>
-	</div>
+	</div>				
 </body>
 </html>

@@ -10,17 +10,22 @@
 </head>
 
 <body>
-	
-					<ul class="inline">
-						<li class="inline">
-							<p class="content-title">功能-URL映射管理</p>
-						</li>
-						<li class="inline-right">
-							<a id="add_app_function" class="add" href="javascript:void(0)" onclick="show('add_app_function_box')">添加功能</a>
-						</li>
-					</ul>
-					<div>
-						<table id="function_url_table" class="table">
+	<div class="container">
+		<div class="row">
+			<ul class="list-inline">
+				<li>
+					<p class="content-title">当前所有功能</p>
+				</li>
+				<li class="float-right">
+					<a class="in-button" href="add_app_function.html" target="_self">
+						<button type="button" class="btn btn-warning btn-xs btn-block">添加功能</button>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="row">
+			<div class="table-responsive">
+				<table id="function_table" class="table">
 							<thead>
 								<tr>
 									<th>序号</th>
@@ -34,23 +39,32 @@
 									<td>1</td>
 									<td>fun1</td>
 									<td>
+										<!--
 										<form action="functionmapping" method="post">
 											<input type="hidden" name="application" value="财务系统">
 											<input type="hidden" name="function" value="fun1">
 											<input type="submit" name="manage" value="管理功能">
 										</form>
+										-->
+										<a class="in-button" href="select_url.html" target="_self">
+											<button type="button" class="btn btn-primary btn-xs btn-block">配置功能相关的URL</button >
+										</a>
 									</td>
 									<td>
+										<!--
 										<form action="deletefunction" method="post">
 											<input type="hidden" name="application" value="财务系统">
 											<input type="hidden" name="function" value="fun1">
 											<input type="submit" name="delete" value="删除功能">
 										</form>
+										-->
+										<button type="button" class="btn btn-danger btn-xs btn-block">删除</button >
 									</td>
 								</tr>
 							</tbody>
-						</table>
-					</div>
-				
+				</table>
+			</div>
+		</div>
+	</div>				
 </body>
 </html>
