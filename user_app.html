@@ -13,19 +13,21 @@
 	<div class="container">
 		<div class="row">
 			<ul class="list-inline">
-				<li>
+				<li class="col-lg-3 nonpadding">
 					<p class="content-title">用户-应用角色映射管理</p>
 				</li>
-				<li class="float-right">
-					<form action="findurm" method="post">
-						<input type="hidden" name="application" value="应用1"/>
-						<input type="hidden" name="reuse" value="1"/>
-						<input id="search1" class="search" placeholder="搜索..." type="text" value="" />
-						<input type="submit" value="搜索">
-					</form>
+				<li class="col-lg-6 nonpadding">
+				<li class="float-right col-lg-3 nonpadding">
+					<div class="input-group">  
+						<input type="text" class="form-control" placeholder="搜索..." / >  
+						<span class="input-group-btn">  
+						   <button class="btn btn-warning btn-search">搜索</button>  
+						</span>  
+					</div>
 				</li>
 			</ul>
 		</div>
+		 
 		<div class="row">
 			<table id="user_app_table" class="table">
 				<thead>

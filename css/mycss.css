@@ -8,19 +8,55 @@
 	margin:0;
 }
 .nav>li>a:hover,.nav>li>a:focus {
-	background-color:#aaa;
-	color:#ff3d00;
+	color:#f90;
+	background-color:#000;
+}
+.nav>li>a:active {
+	background-color:#000;
+	color:#f90;
+}
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover{
+	color:#f90;
+	background-color:#000;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+	color:#f90;
+	background-color:#000;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #f90;
+    text-decoration: none;
+    background-color: #000;
+}
+.dropdown-menu>li>a {
+	color:#fc0;
+}
+.dropdown-menu {
+	background-color:#000;
 }
 .list-inline {
 	margin-bottom:0;
 }
-.table-bordered {
-	border-color:#333;
+a:focus,
+a:active:focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a.active.focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;          
 }
-
 /*--common css--*/
 body {
 	background:#333;
+	font-family:"微软雅黑" !important;
 }
 iframe {
 	width:100%;
@@ -34,19 +70,14 @@ iframe {
 	text-align:right;
 	float:right;
 }
-
+.float-left {
+	text-align:left;
+	float:left;
+}
 
 /*--css of index--*/
 h1 {
 	margin-bottom:0;
-}
-a.navitem {
-	color:#fc0;
-	background-color:#555;
-}
-a.active {
-	color:#f90;
-	background-color:#000;
 }
 .title {
 	font-size:38px;
@@ -61,6 +92,10 @@ a.active {
 	color:#fc0;
 	padding:10px;
 	height:auto;
+}
+a.navitem {
+	color:#fc0;
+	background-color:#555;
 }
 
 
